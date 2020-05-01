@@ -1,0 +1,41 @@
+﻿<Window x:Class="PasswordManager.RemovePass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManager"
+        mc:Ignorable="d"
+        Title="RemovePass" Height="520" Width="450">
+    <Grid>
+		<StackPanel>
+			<TextBlock FontFamily="bold"
+					   FontSize="42"
+					   HorizontalAlignment="Center"
+					   Margin="0 20 0 0 ">Remove Password</TextBlock>
+			<TextBlock    FontFamily="Bold"
+						  FontSize="32"
+						  HorizontalAlignment="Center"
+						  Margin="20 40 28 0 ">Choose the service:</TextBlock>
+			<ComboBox FontSize="15"
+					  x:Name="Services"
+					  Margin="0 20 10 0 "
+					  Height="28"
+					  Width="250"
+					  HorizontalAlignment="Center"></ComboBox>
+			<Button   FontFamily="bold"
+					  FontSize="28"
+					  HorizontalAlignment="Center"
+					  Margin="0 170 20 0 "
+					  Width="120"
+					  Height="39"
+					  Click="Button_Click">Remove</Button>
+			<Button  FontFamily="bold"
+					 FontSize="20"
+					 Width="90"
+					 Height="28"
+					 HorizontalAlignment="Left"
+					 Margin="10 35 0 0"
+					 Click="Button_Click_1">Go Back</Button>
+		</StackPanel>
+	</Grid>
+</Window>
